@@ -13,9 +13,7 @@ export const Content = styled.div`
 
 export const Main = styled.div`
   display: flex;
+  flex-direction: column;
 `;
 
-export const Side = styled.div`
-  display: flex;
-  flex-shrink: 0;
-`;
+export const Side = styled.div``;

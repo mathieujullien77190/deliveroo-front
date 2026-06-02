@@ -1,23 +1,17 @@
 import * as S from "./UI";
 
 import { Wrapper } from "../../GlobalStyle";
+import type { IntroProps } from "./types";
 
-export const Intro = () => {
+export const Intro = ({ name, description, picture, path }: IntroProps) => {
   return (
     <Wrapper>
       <S.Container>
         <div>
-          <S.H2>Le Pain Quotidien - Montorgueil</S.H2>
-          <p>
-            Profitez de chaque plaisir de la vie quotidienne. Le Pain Quotidien
-            propose des ingrédients simples et sains, du bon pain, des fruits et
-            des légumes frais et de saison issus de l’agriculture biologique.
-          </p>
+          <S.H2>{name}</S.H2>
+          <p>{description}</p>
         </div>
-        <img
-          src="https://f.roocdn.com/images/menus/17697/header-image.jpg"
-          alt="illustration de la bouffe"
-        />
+        <img src={picture} alt={path} />
       </S.Container>
     </Wrapper>
   );

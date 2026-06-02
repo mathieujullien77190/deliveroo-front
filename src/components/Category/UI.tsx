@@ -13,7 +13,7 @@ export const Content = styled.div`
   gap: 20px;
 
   article {
-    flex: 1 1;
+    width: calc(50% - 40px);
   }
 `;
 

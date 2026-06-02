@@ -18,7 +18,7 @@ export const Container = styled.section`
 
   > img {
     overflow: hidden;
-    width: 350px;
+    width: 380px;
     flex-shrink: 0;
   }
 `;

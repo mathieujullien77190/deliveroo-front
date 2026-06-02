@@ -37,7 +37,13 @@ p {
 
 img {
     border-radius: 5px;
-}`;
+}
+
+input,button {
+    font-family: "Fredoka", sans-serif;
+}
+
+`;
 
 export const Wrapper = Styled.div`
     margin:0 auto;

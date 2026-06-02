@@ -3,7 +3,7 @@ import { SECONDARY_COLOR } from "../../constants";
 
 export const Container = styled.article`
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
   border-radius: 5px;
   cursor: pointer;
   padding: 15px;
@@ -19,6 +19,10 @@ export const Container = styled.article`
   p {
     font-size: 1rem;
     font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   img {

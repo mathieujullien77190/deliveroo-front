@@ -1,15 +1,15 @@
 import Meal from "../Meal";
+import type { CategoryProps } from "./types";
 import * as S from "./UI";
 
-export const Category = () => {
+export const Category = ({ name, meals, onChoose }: CategoryProps) => {
   return (
     <S.Container>
-      <S.H3>Brunchs</S.H3>
+      <S.H3>{name}</S.H3>
       <S.Content>
-        <Meal />
-        <Meal />
-        <Meal />
-        <Meal />
+        {meals.map((meal) => (
+          <Meal key={meal.id} {...meal} onChoose={onChoose} />
+        ))}
       </S.Content>
     </S.Container>
   );
